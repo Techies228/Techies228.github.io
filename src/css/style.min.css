@@ -3912,4 +3912,12 @@ body.lightTheme .header__menu__dropdown__item:hover {
   body.lightTheme .mobileHeader__logo img {
     content: url("/src/icons/dota2_logo_blue.png");
   }
+}
+@media (max-width: 440px) {
+  body.lightTheme .promo__bottom {
+    width: 100%;
+  }
+  body.lightTheme .promo__bottom__wrap {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.min.css.map */
