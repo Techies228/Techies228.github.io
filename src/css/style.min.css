@@ -437,6 +437,7 @@ body::-webkit-scrollbar-thumb {
 }
 .news__main__update a {
   text-decoration: none;
+  padding: 15px;
 }
 .news__main__otherUpdates {
   background-color: grey;
@@ -523,12 +524,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .heroes {
-  min-height: 1200px;
+  min-height: 1150px;
 }
 .heroes__wrapper {
   position: relative;
   min-height: 1080px;
-  background: url("/src/img/heroes/heroes_dota.jpg") center center/cover no-repeat;
+  background: url("/src/img/heroes/BEZIMENI.png") center center/cover no-repeat;
 }
 .heroes__wrapper__content {
   position: absolute;
@@ -2645,6 +2646,42 @@ input {
 .herolist-heroPage__image__darkWillow {
   background: url("/src/img/heroesList/heroes/dark_willow/dark_willow.png") center center/cover no-repeat;
 }
+.herolist-heroPage__image__invoker {
+  background: url("/src/img/heroesList/heroes/invoker/invo.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__arcwarden {
+  background: url("/src/img/heroesList/heroes/arcWarden/arc.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__antimage {
+  background: url("/src/img/heroesList/heroes/antimage/antimage.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__axe {
+  background: url("/src/img/heroesList/heroes/axe/axe.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__bane {
+  background: url("/src/img/heroesList/heroes/bane/bane.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__batrider {
+  background: url("/src/img/heroesList/heroes/batrider/batrider.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__visage {
+  background: url("/src/img/heroesList/heroes/visage/visage.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__gyro {
+  background: url("/src/img/heroesList/heroes/gyrocopter/gyro.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__io {
+  background: url("/src/img/heroesList/heroes/io/io.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__beastmaster {
+  background: url("/src/img/heroesList/heroes/beastmaster/beastmaster.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__nyxAssassin {
+  background: url("/src/img/heroesList/heroes/nyxassassin/nyx.jpg") center center/cover no-repeat;
+}
+.herolist-heroPage__image__rubick {
+  background: url("/src/img/heroesList/heroes/rubick/rubick.jpg") center center/cover no-repeat;
+}
 
 .newsPage {
   background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//blog/bg_repeater.jpg");
@@ -2734,6 +2771,9 @@ body.lightTheme .promo__bottom__wrap {
   padding: 10px;
 }
 body.lightTheme .promo .layer__base {
+  background-image: url("/src/img/radiant/homePage/radiant__hero.png");
+}
+body.lightTheme .promo .layer__mainlayer {
   background-image: url("/src/img/radiant/homePage/radiant_back_base.jpg");
 }
 body.lightTheme .promo .layer__middle {
@@ -2764,10 +2804,16 @@ body.lightTheme .news__main .layer__base {
   background-image: url("/src/img/radiant/homePage/news_back_base.jpg");
 }
 body.lightTheme .news__main .layer__middle {
-  background-image: url("/src/img/radiant/homePage/news_back_middle.png");
+  background-image: url("/src/img/radiant/homePage/news_back_middle2.png");
 }
 body.lightTheme .news__main .layer__front {
   background-image: url("/src/img/radiant/homePage/news_back_front.png");
+}
+body.lightTheme .heroes__wrapper {
+  background-image: url("/src/img/radiant/homePage/radiant_heroes.png");
+}
+body.lightTheme .cybersport__wrapper {
+  background-image: url("/src/img/radiant/homePage/radiant_cyber.png");
 }
 body.lightTheme .joinBattle__container {
   background: url("/src/img/radiant/homePage/radiant_joinBattle.jpg") center center/cover no-repeat;
@@ -2784,6 +2830,15 @@ body.lightTheme .mainBtn_joinBattle:hover {
 }
 body.lightTheme .blogContainer:hover {
   border-bottom-color: #00b7ff;
+}
+body.lightTheme .newsPage {
+  background-image: url("/src/img/radiant/homePage/radiant__news.png");
+}
+body.lightTheme .newsPage__text {
+  text-shadow: 0 0 15px #00b7ff;
+}
+body.lightTheme .header__menu__dropdown__item:hover {
+  color: #00cdd4;
 }
 
 @media (max-width: 1710px) {
@@ -3374,7 +3429,7 @@ body.lightTheme .blogContainer:hover {
     width: 250px;
     height: 60px;
     font-size: 28px;
-    margin-top: 40px;
+    margin-top: 8px;
   }
   .footer__descr {
     font-size: 14px;
@@ -3422,7 +3477,7 @@ body.lightTheme .blogContainer:hover {
     width: 111px;
   }
   .promo__bottom {
-    width: 320px;
+    width: 90%;
     height: 215px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3443,11 +3498,13 @@ body.lightTheme .blogContainer:hover {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
+    width: 100%;
   }
   .promo__title {
     text-align: center;
-    font-size: 18px;
-    line-height: 24px;
+    width: 100%;
+    font-size: calc(10px + 3.125vw);
+    line-height: 28px;
   }
   .promo__subtitle {
     display: none;
@@ -3493,26 +3550,30 @@ body.lightTheme .blogContainer:hover {
   }
   .heroes__wrapper {
     min-height: 955px;
+    background-position-y: 410px;
+    background-size: 900px;
   }
   .heroes__wrapper__content {
-    bottom: 5px;
+    bottom: 45px;
   }
   .heroes__wrapper__content__subtitle {
-    font-size: 20px;
+    font-size: calc(10px + 2.6041666667vw);
   }
   .heroes__wrapper__content__title {
-    font-size: 24px;
+    font-size: calc(10px + 4.3402777778vw);
   }
   .heroes__wrapper__content__descr {
-    font-size: 16px;
+    font-size: calc(10px + 1.3888888889vw);
     padding: 0 3px;
   }
   .heroes__wrapper__content .mainBtn {
-    width: 180px;
+    width: calc(60px + 38.1944444444vw);
     height: 47px;
+    height: calc(40px + 1.7361111111vw);
+    border-width: 4px;
   }
   .heroes__wrapper__content .mainBtn__descr {
-    font-size: 20px;
+    font-size: calc(10px + 2.9513888889vw);
   }
   .cybersport {
     min-height: 735px;
@@ -3521,14 +3582,15 @@ body.lightTheme .blogContainer:hover {
     min-height: 700px;
   }
   .cybersport__wrapper__content {
-    max-width: 300px;
+    max-width: calc(80px + 73.2638888889vw);
     height: 340px;
+    padding: 30px 10px 0 10px;
   }
   .cybersport__wrapper__content__title {
-    font-size: 16px;
+    font-size: calc(10px + 2.6041666667vw);
   }
   .cybersport__wrapper__content__descr {
-    font-size: 14px;
+    font-size: calc(10px + 1.2152777778vw);
   }
   .cybersport__wrapper__content .mainBtn {
     width: 200px;
@@ -3561,16 +3623,24 @@ body.lightTheme .blogContainer:hover {
     min-height: 100px;
   }
   .section__title_heroes .left__horizBar, .section__title_heroes .right__horizBar {
-    width: 200px;
+    width: 32.9861111111vw;
   }
   .section__title_cybersport .section__title__smokeTop {
-    height: 30px;
+    height: 65px;
   }
   .section__title_cybersport .left__horizBar, .section__title_cybersport .right__horizBar {
     width: 200px;
   }
   .section__title_joinBattle .left__horizBar, .section__title_joinBattle .right__horizBar {
     display: none;
+  }
+  .heroesListAdd {
+    grid-template-rows: 305px 2px 17px;
+  }
+}
+@media (max-width: 380px) {
+  .promo__bottom {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
